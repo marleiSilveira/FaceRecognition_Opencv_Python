@@ -23,7 +23,21 @@ def getImagemComId():
     return np.array(ids), faces #converte a lista em np.array
 
 ids, faces = getImagemComId()
-print(faces)
+#print(faces)
+print("treinando...")
+eigenfaces.train(faces, ids) #lê as imagens e faz o aprendizado supervisionado com as labels
+eigenfaces.write('classificadorEigen.yml') # arquivo que é gerado para reconhecimento facial
+
+fisherface.train(faces, ids)
+fisherface.write('classificadorFisher.yml')
+
+lbph.train(faces, ids)
+lbph.write('classificadorLBPH.yml')
+
+print("Treinamento realizado")
+
+
+
 
 
 
