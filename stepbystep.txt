@@ -1,4 +1,5 @@
-﻿1 -
+﻿Ver site: bitbuket.org/SpikeSL/vision-systems/src/master/
+1 -
 -------------
 import cv2
 

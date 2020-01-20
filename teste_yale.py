@@ -4,10 +4,10 @@ import numpy as np
 from PIL import Image
 
 detectorFace = cv2.CascadeClassifier("haarcascade-frontalface-default.xml")
-# reconhecedor = cv2.face.EigenFaceRecognizer_create()
-# reconhecedor.read("classificadorEigenYale.yml")
-# reconhecedor = cv2.face.FisherFaceRecognizer_create()
-# reconhecedor.read("classificadorFisherYale.yml")
+reconhecedor = cv2.face.EigenFaceRecognizer_create()
+reconhecedor.read("classificadorEigenYale.yml")
+reconhecedor = cv2.face.FisherFaceRecognizer_create()
+reconhecedor.read("classificadorFisherYale.yml")
 reconhecedor = cv2.face.LBPHFaceRecognizer_create()
 reconhecedor.read("classificadorLBPHYale.yml")
 
