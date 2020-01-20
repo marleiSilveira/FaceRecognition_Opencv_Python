@@ -1,4 +1,4 @@
-1 -
+﻿1 -
 -------------
 import cv2
 
@@ -361,6 +361,9 @@ cv2.destroyAllWindows()
 
 ------------------
 10
+
+treinamento base yale 
+
 
 
 
