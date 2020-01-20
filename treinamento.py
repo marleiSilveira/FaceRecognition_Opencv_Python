@@ -2,7 +2,7 @@ import cv2
 import os # recursos sistema operacional
 import numpy as np
 
-eigenfaces = cv2.face.EigenFaceRecognizer_create()
+eigenfaces = cv2.face.EigenFaceRecognizer_create(num_components=10, threshold=2)
 fisherface = cv2.face.FisherFaceRecognizer_create()
 lbph = cv2.face.LBPHFaceRecognizer_create()
 
