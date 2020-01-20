@@ -2,9 +2,9 @@ import cv2
 import os # recursos sistema operacional
 import numpy as np
 
-eigenfaces = cv2.face_EigenFaceRecognizer()
-fisherface = cv2.face_FisherFaceRecognizer()
-lbph = cv2.face_LBPHFaceRecognizer()
+eigenfaces = cv2.face.EigenFaceRecognizer_create()
+fisherface = cv2.face.FisherFaceRecognizer_create()
+lbph = cv2.face.LBPHFaceRecognizer_create()
 
 def getImagemComId():
     caminhos = [os.path.join('fotos', f) for f in os.listdir('fotos')] # lista de caminhos da foto \\...
